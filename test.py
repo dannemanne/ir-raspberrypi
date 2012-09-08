@@ -8,5 +8,5 @@ i = 0
 while i < 10:
     start_time = time.clock()
     irinput = GPIO.input(3)
-    print time.clock() - start_time
+    print (time.clock() - start_time).microseconds
     i += 1
