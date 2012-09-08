@@ -16,6 +16,8 @@ print "Running"
 while recording:
     # irinput Default state is True (high)
     irinput = GPIO.input(3)
+    if not scanning:
+        counter2 = 0
     
     # If irinput is False then GPIO state is low. That means IR signal is detected
     if irinput == False:
