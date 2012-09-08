@@ -6,6 +6,7 @@ GPIO.setup(3, GPIO.IN)
 
 result = ""
 counter = 0
+counter2 = 0
 scanning = False
 target_time = time.clock()
 recording = True
@@ -38,4 +39,6 @@ while recording:
     # Sleep will take to long time between cycles to accuratly measure IR pulses. Keep it active instead
     target_time += 0.0001
     while time.clock() < target_time:
-        pass
+        counter2 +=1
+
+print counter2
