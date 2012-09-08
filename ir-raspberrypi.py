@@ -6,7 +6,6 @@ GPIO.setup(3, GPIO.IN)
 
 result = ""
 counter = 0
-counter2 = 0
 scanning = False
 target_time = time.clock()
 recording = True
