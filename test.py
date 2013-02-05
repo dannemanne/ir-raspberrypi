@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 GPIO.setup(3, GPIO.IN)
 
 i = 0
-while i < 10:
+while i < 100:
     print time.clock()
     irinput = GPIO.input(3)
     print time.clock()
